@@ -12,4 +12,4 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 streamlit.dataframe(my_fruit_list)
 
 # Lets put a picklist here so they can pick the fruits they want in the smoothie
-streamlit.multiselect("Pick some fruits: ", list(my_fruit_list.index))
+streamlit.multiselect("Pick some fruits: ", list(my_fruit_list.Fruit))
